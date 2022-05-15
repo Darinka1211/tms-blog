@@ -1,0 +1,40 @@
+.input_form {
+    display: flex;
+    flex-direction: column;
+    width: 544px;
+    height: 56px;
+    font-size: 16px;
+    border: 2px solid #DADADA;
+    border-radius: 2px;
+    top: 28px;
+}
+.input__form:focus{
+    outline: 2px solid #DADADA;
+}
+.input__form:active{
+    border: none;
+}
+.input__form:disabled{
+    background-color: #E8E8E8;
+    color: #8D8E97;
+}
+
+.input::placeholder {
+    color: #8D8E97;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.div_form {
+    color: gray;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.error_form {
+    color: red;
+}

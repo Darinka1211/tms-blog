@@ -1,0 +1,47 @@
+.Pages__container {
+    color: #8D8E97;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    line-height: 64px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #DADADA;
+    padding-bottom: 1%;
+    padding-TOP: 4%;
+    vertical-align: center;
+    width: 90%;
+}
+
+.previousPages .nextPages {
+    display: flex;
+    font-display: column;
+}
+
+.numberPages {
+    display: flex;
+}
+
+.pNumber {
+    margin: 0 10px;
+    color: #313037;
+    cursor: pointer;
+}
+
+
+.leftArrow, .rightArrow{
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rightArrow {
+    color: #313037;
+}
+
+.imgPages {
+    vertical-align: middle;
+}
+
