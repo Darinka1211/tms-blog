@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+.Header__container {
+    background-color: #2231AA;
+    display: flex;
+    justify-content: space-between;
+    line-height: 84px;
+    height: 84px;
+}
+
+.Burger__container {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.Header__btn {
+    border: none;
+    background-color: inherit;
+    width: 84px;
+    height: 84px;
+
+
+}
+
+.Search__container {
+    width: 282px;
+    display: flex;
+}
+
+.UserName__abbr {
+    padding: 14px;
+    margin: 0 15px;
+    height: 24px;
+    background-color: #5360CD;
+}
+
+.UserName {
+    color: white;
+}
+
+.burger {
+    border-right: 1px solid #5360CD;
+    cursor: pointer;
+}
+
+.search {
+    border-right: 1px solid #5360CD;
+    border-left: 1px solid #5360CD;
+    cursor: pointer;
+}
