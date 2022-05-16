@@ -2,15 +2,16 @@ import React from 'react'
 import { useState } from 'react'
 import { Button } from './components/Button/Button'
 import { setTheme } from './redux/redusers/theme'
-
+import { useAppDispatch, useAppSelector } from './redux/hooks'
 
 function App() {
-  const [theme,setTheme] = useState ('dark')//1
-    
+  const theme = useAppSelector(state => state.theme.value)
+  const dispatch = useAppDispatch()
 
+  
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark'
-    setTheme(newTheme)
+    dispatch(setTheme(newTheme))
   }
 
   return (
