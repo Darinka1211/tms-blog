@@ -1,0 +1,27 @@
+.PostCard__container {
+    border-bottom: 2px solid #DADADA;
+    padding: 20px 0;
+    max-width: 740px;
+}
+
+.PostCard__container__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PostCard__text {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.PicturePostCard {
+    padding-left: 10px;
+}
+.Title__PostCard{
+    font-size: 32px;
+    font-weight: 700;
+}
+.Title__PostCard:hover {
+    color: #2231AA;
+    cursor: pointer;
+}
