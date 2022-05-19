@@ -1,0 +1,1 @@
+export  { fetchPosts, default as postsReducer,postsSlice } from './postsSlice'
