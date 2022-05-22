@@ -5,7 +5,6 @@ type ButtonProps = {
   text: string;
   onClick: () => void;
   className: string;
-  
   icon?: string;
 };
 export const Button = ({
