@@ -1,1 +1,6 @@
-export  { singUp, default as postsReducer,authSlice } from './authSlice'
+export {
+    signUp,
+    signUpFailure,
+    signUpSuccess,
+    default as authReducer,
+  } from './authSlice'

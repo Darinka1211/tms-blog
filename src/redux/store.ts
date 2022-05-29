@@ -1,12 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from "../features/theme/themeSlice";
-import { postsReducer } from "../features/posts";
-import { authReducer } from "../features/auth";
-import { singUpSaga } from "../features/sages/singUpSages";
-import createSagaMiddleware from "@redux-saga/core";
-import { getDefaultLibFileName } from "typescript";
-import { curryGetDefaultMiddleware } from "@reduxjs/toolkit/dist/getDefaultMiddleware";
-const sagaMiddleware = createSagaMiddleware();
+import { configureStore } from '@reduxjs/toolkit'
+import createSagaMiddleware from 'redux-saga'
+
+import { themeReducer } from '../features/theme'
+import { postsReducer } from '../features/posts'
+import { authReducer } from '../features/auth'
+import { signUpSaga } from '../features/sagas/singUpSagas'
+const sagaMiddleware = createSagaMiddleware()
 
 export const store = configureStore({
   reducer: {
@@ -14,10 +13,13 @@ export const store = configureStore({
     posts: postsReducer,
     auth: authReducer,
   },
-  middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(sagaMiddleware);
+  middleware: getDefaultMiddleware => {
+    return getDefaultMiddleware().concat(sagaMiddleware)
   },
-});
-sagaMiddleware.run(singUpSaga);
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+})
+
+sagaMiddleware.run(signUpSaga)
+
+export type RootState = ReturnType<typeof store.getState>
+
+export type AppDispatch = typeof store.dispatch
