@@ -1,0 +1,1 @@
+export  { singUp, default as postsReducer,authSlice } from './authSlice'
