@@ -2,26 +2,30 @@ import React from "react";
 import "./Button.css";
 
 type ButtonProps = {
-  text: string;
-  onClick: () => void;
-  className: string;
-  icon?: any;
-};
+  text?: string
+  disabled?: boolean
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
+  className?: string
+  icon?: any
+  alt?: string
+}
+
 export const Button = ({
-  onClick,
   text,
-  className,
-  icon
-  
+  disabled = false,
+  onClick,
+  className = 'primary',
+  icon,
 }: ButtonProps) => {
   return (
     <button
       type="button"
+      className={`button button--${className}`}
+      disabled={disabled}
       onClick={onClick}
-      className={className}
-      
     >
-      <img className="img" src={icon}></img> {text}{" "}
+      {icon}
+      {text && <span className="button__text">{text}</span>}
     </button>
-  );
-};
+  )
+}
