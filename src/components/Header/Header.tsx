@@ -15,6 +15,13 @@ export const Header = (props: HeaderProps) => {
         <button className="burger Header__btn">
           <img src={Burger} alt="burger" />
         </button>
+
+        <div className="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">Add Post</a>
+        </div>
+
+
       </div>
       <div className="Search__container">
         <button className="search Header__btn">
@@ -24,7 +31,9 @@ export const Header = (props: HeaderProps) => {
           <span className="UserName__abbr">AM</span>
           <span className="UserName__name">Artem Malkin</span>
         </div>
+
       </div>
     </div>
   );
 };
+

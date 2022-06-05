@@ -1,5 +1,8 @@
 
 import React from "react";
+
+import { Header } from "./components/Header/Header";
+
 import { Button } from "./components/Button";
 import BookmarkIcon from "./components/Img/flag.svg";
 import dislikeIcon from "./components/Img/dislike.svg";
@@ -14,9 +17,23 @@ import { PostCardMicro } from "./components/PostCardMicro/PostCardMicro";
 import {PostList} from "./components/PostList/PostList"
 
 
+
 function App() {
   return (
     <div className="App">
+
+      <Header></Header>
+    
+      {/* <nav>
+        
+          <Link to="/posts">Posts</Link>
+          <Link to="/posts/1">Post 1</Link>
+          <Link to="/posts/add">Add post</Link>
+          <Link to="/search">Search</Link>
+        
+      </nav> */}
+      
+
       <Button
         text="Primary"
         onClick={() => console.log("Text")}
@@ -94,6 +111,7 @@ function App() {
 
        
 <PostList/>
+
 
 
     </div>
