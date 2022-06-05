@@ -1,0 +1,9 @@
+.textarea {
+    display: flex;
+    flex-direction: row;
+    width: 544px;
+    height: 56px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+

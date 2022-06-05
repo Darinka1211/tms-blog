@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+
     "@commitlint/cli": "^16.3.0",
     "cz-customizable": "^6.3.0",
     "husky": "^8.0.1"
@@ -66,4 +67,5 @@
       "husky": "^1.1.3"
     }
   }
+
 }

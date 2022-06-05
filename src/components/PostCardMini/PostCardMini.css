@@ -1,0 +1,20 @@
+.PostCardMini__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border-bottom: 2px solid #DADADA;
+    padding: 20px 0;
+    max-width: 352px;
+
+}
+
+.Title__PostCardMini {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.Title__PostCardMini:hover {
+    color: #2231AA;
+    cursor: pointer;
+}

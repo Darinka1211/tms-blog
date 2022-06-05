@@ -1,0 +1,12 @@
+.Likes__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Btn__menu, .Like__btn, .Dislike__btn,.Btn__bookmark  {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}

@@ -1,0 +1,21 @@
+.p__Blog__name {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.nav__Blog {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navBlog {
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.TitleBlog__container {
+    border-bottom: 2px solid #DADADA;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+}
