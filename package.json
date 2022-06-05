@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.4",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
@@ -43,13 +44,12 @@
   "devDependencies": {
     "cz-customizable": "^6.3.0"
   },
-    "config": {
-      "commitizen": {
-        "path": "node_modules/cz-customizable"
-      },
-      "cz-customizable": {
-        "config": "config/git/commitizen.js"
-      }
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "config/git/commitizen.js"
     }
-  
+  }
 }
