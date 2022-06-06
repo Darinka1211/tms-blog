@@ -1,7 +1,7 @@
 import React from "react";
 import "./LikePanel.css";
-import Dislike from "../Img/Dislike.svg";
-import Like from "../Img/Like.svg";
+import Dislike from "../Img/dislike.svg";
+import Like from "../Img/like.svg";
 import Bookmark from "../Img/Bookmark.svg";
 import Menu from "../Img/Menu.svg";
 

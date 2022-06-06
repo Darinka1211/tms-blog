@@ -11,20 +11,17 @@ import { NavLink } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Blog } from "./pages/Blog/blog";
 import { useTheme } from './features/theme'
-
+import { Header } from "./components/Header/Header";
 import { useAppDispatch } from './redux/hooks'
 import { signUp } from './features/auth'
 import { Sign } from "./components/Sign";
 import { LogIn } from "./components/LogIn";
 
- /* import { Title } from "./components/Title";
-import { Likebar } from "./components/Likebar"; */
+
 
 function App() {
   return (
     <div className="App">
-<LogIn/>
-
 
       {/*
       
