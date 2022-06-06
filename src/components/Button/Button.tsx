@@ -3,24 +3,24 @@ import "./Button.css";
 
 type ButtonProps = {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
   className: string;
-  disable: boolean;
-  icon?: string;
+  disabled?: boolean;
+  icon?: any;
 };
 export const Button = ({
   onClick,
   text,
   className,
   icon,
-  disable,
+  disabled,
 }: ButtonProps) => {
   return (
     <button
       type="button"
       onClick={onClick}
       className={className}
-      disabled={disable}
+      disabled={disabled}
     >
       <img className="img" src={icon}></img> {text}{" "}
     </button>

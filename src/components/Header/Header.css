@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.Header__container {
+.header__container {
     background-color: #2231AA;
     display: flex;
     justify-content: space-between;
@@ -10,18 +10,18 @@ body {
     height: 84px;
 }
 
-.Header__btn {
+.header__burger {
     border: none;
     background-color: inherit;
     width: 84px;
     height: 84px;
 }
 
-.Search__container {
+.search__container {
     width: 282px;
     display: flex;
 }
-
+ 
 .UserName__abbr {
     padding: 14px;
     margin: 0 15px;
@@ -42,4 +42,4 @@ body {
     border-right: 1px solid #5360CD;
     border-left: 1px solid #5360CD;
     cursor: pointer;
-}
+} 

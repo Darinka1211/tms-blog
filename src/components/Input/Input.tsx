@@ -3,13 +3,13 @@ import { useState } from "react";
 import "./Input.css";
 
 type InputProps = {
-  text: string;
+  text?: string;
   className: string;
   disabled?: boolean;
   placeholder: string;
   type: string;
-  label: string;
-  classNameInput: string;
+  label?: string;
+  classNameInput?: string;
 };
 
 export const Input = (props: InputProps) => {

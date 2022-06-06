@@ -1,0 +1,16 @@
+
+.divBSign {
+    border-bottom: 2px solid #DADADA;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.nameSign {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.nameSignBackk {
+    font-size: 16px;
+    font-weight: 400;
+}

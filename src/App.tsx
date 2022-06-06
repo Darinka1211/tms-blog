@@ -10,53 +10,63 @@ import likeIcon from "./components/Img/Like.svg";
 import { NavLink } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Blog } from "./pages/Blog/blog";
-import Layout from "./components/Layout/Layout";
-/* import { Title } from "./components/Title";
+import { useTheme } from './features/theme'
+
+import { useAppDispatch } from './redux/hooks'
+import { signUp } from './features/auth'
+import { Sign } from "./components/Sign";
+import { LogIn } from "./components/LogIn";
+
+ /* import { Title } from "./components/Title";
 import { Likebar } from "./components/Likebar"; */
 
 function App() {
   return (
     <div className="App">
-      <Blog />
-      <div className="buttons"></div>
+<LogIn/>
 
+
+      {/*
+      
+      
+{/* 
       <Button
         text="Primary"
         onClick={() => console.log("Text")}
         className="button-primary"
-        disable={false}
+        disabled={false}
       />
       <Button
         text="Secondary"
         onClick={() => console.log("Text")}
         className="button-secondary"
-        disable={false}
+        disabled={false}
       />
       <Button
         text="Secondary 2"
         onClick={() => console.log("Text")}
         className="button-secondary2"
-        disable={false}
+        disabled={false}
       />
       <Button
         text="Button with icon"
         onClick={() => console.log("Text")}
         className="Bookmark-Icon"
-        disable={false}
+        disabled={false}
         icon={BookmarkIcon}
       />
       <Button
         text=""
         onClick={() => console.log("Text")}
         className="dislike-Icon"
-        disable={false}
+        disabled={false}
         icon={dislikeIcon}
       />
       <Button
         text=""
         onClick={() => console.log("Text")}
         className="like-Icon"
-        disable={false}
+        disabled={false}
         icon={likeIcon}
       />
 
@@ -96,7 +106,8 @@ function App() {
         label=""
       />
 
-      <PostList />
+      <PostList /> */}
+
     </div>
   );
 }
