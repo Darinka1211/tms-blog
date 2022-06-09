@@ -18,7 +18,7 @@ export const Header = (props: HeaderProps) => {
   const toggleVisible = () => {
     setIsSearchPanelVisible(
       (isSearchPanelVisible): boolean => !isSearchPanelVisible
-    );
+);
   };
 
   return (
