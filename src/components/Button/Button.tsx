@@ -1,28 +1,23 @@
-import React from "react";
-import "./Button.css";
+import React, { ReactElement } from 'react'
+import './Button.scss'
 
 type ButtonProps = {
-  text: string;
-  onClick?: () => void;
-  className: string;
-  disabled?: boolean;
-  icon?: any;
-};
-export const Button = ({
-  onClick,
-  text,
-  className,
-  icon,
-  disabled,
-}: ButtonProps) => {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={className}
-      disabled={disabled}
-    >
-      <img className="img" src={icon}></img> {text}{" "}
-    </button>
-  );
-};
+    text?: string,
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void,
+    className: string,
+    disabled?: boolean,
+    icon?: ReactElement
+}
+ 
+export const Button = ({onClick, text, className, disabled, icon}: ButtonProps) => {
+    return (
+        <button 
+            type='button' 
+            onClick={onClick} 
+            className={`${className} button`} 
+            disabled={disabled}>
+            {icon}
+            {text}
+        </button>
+    )
+}

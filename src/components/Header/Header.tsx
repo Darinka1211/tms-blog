@@ -1,48 +1,56 @@
-import React from "react";
-import { useState } from "react";
-import { Button } from "../Button/Button";
-import { Input } from "../Input/Input";
-import { ReactComponent as BurgerOpen } from "../Img/BurgerOpen.svg";
-import { ReactComponent as BurgerClose } from "../Img/BurgerClose.svg";
-import { ReactComponent as Search } from "../Img/Search.svg";
+import React, { useState } from "react";
+import './Header.scss';
+import { ReactComponent as Burger } from './icon/Burger.svg';
+import { ReactComponent as CloseBurger } from './icon/closeBurger.svg';
+import { ReactComponent as Search } from './icon/search.svg';
+import { BurgerMenu } from "../BurgerMenu";
+import { Button } from '../Button/Button';
 
-import "./Header.css";
 
-type HeaderProps = {
-  className?: string;
-  image?: string;
-};
 
-export const Header = (props: HeaderProps) => {
-  const [isSearchPanelVisible, setIsSearchPanelVisible] = useState(false);
-  const toggleVisible = () => {
-    setIsSearchPanelVisible(
-      (isSearchPanelVisible): boolean => !isSearchPanelVisible
-);
-  };
+export const Header = () => {
 
-  return (
-    <div className="header__container">
-      <div className="header__burger">
-        <Button text="" icon={<BurgerOpen />} className="burger " />
-      </div>
-      {isSearchPanelVisible && (
-        <Input className="header" type="search" placeholder="Search..." />
-      )}
-      <div className="search__container">
-        <div className="header__search">
-          <Button
-            text=""
-            icon={<Search />}
-            onClick={toggleVisible}
-            className="search"
-          />
-        </div>
-        <div className="header__user">
-          <span className="UserName__abbr">AM</span>
-          <span className="UserName">Artem Malkin</span>
-        </div>
-      </div>
-    </div>
-  );
-};
+    const [burgerValue, setBurgerValue] = useState(false);
+    const [searchValue, setSearchValue] = useState(false);
+    
+    return(
+        <header className="header">
+            <div className="header__left-content">
+                <Button 
+                    icon={burgerValue ? <CloseBurger/>  : <Burger/>} 
+                    onClick={() => setBurgerValue(previousValue => !previousValue)} 
+                    className='button--burger' 
+                    disabled={false}
+                />
+                {burgerValue 
+                && 
+                <BurgerMenu 
+                    firstName='Artem' 
+                    lastName='Malkin' 
+                />}
+                {searchValue 
+                &&
+                <div className="header__search">
+                <input type="input" placeholder="Search..." className="header__search-input"/>
+                <Button 
+                    icon={<CloseBurger/>} 
+                    onClick={() => setSearchValue(false)} 
+                    className='button--search-close' 
+                    disabled={false}
+                />
+                </div>
+                }
+            </div>
+            <div className="header__right-content">
+                <Button 
+                    icon={<Search/>} 
+                    onClick={() => setSearchValue(previousValue => !previousValue)} 
+                    className='button--search-open' 
+                    disabled={false}
+                />
+                
+                
+            </div>
+        </header>
+    )
+}
